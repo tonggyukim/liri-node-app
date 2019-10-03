@@ -3,6 +3,7 @@ var Spotify = require('node-spotify-api');
 var Twitter = require('twitter');
 var request = require('request');
 var fs = require('fs');
+
 var getMyTweets = function(){
 
     var client = new Twitter(keys.twitterKeys);
@@ -84,6 +85,7 @@ var pick = function(caseData, functionData){
             break;
         case 'movie-this':
             getMeMovie(functionData);
+            break;
         case 'do-what-it-says':
             doWhatItSays();
             break;
